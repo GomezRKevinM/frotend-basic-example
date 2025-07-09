@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    user-select: none;
+}
+body{
+    background-color: #f1f1f1;
+}
+header{
+    background-color: #09f;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+footer{
+    text-align: center;
+    background-color: #d4d4d4;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+h2{
+    font-size: 3.3rem;
+    color: #333;
+}
+ul{
+    list-style: none;
+    width: 100%;
+    padding: 0 15px;
+}
+.task{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+    display: flex;
+    width: 97%;
+    justify-content: space-between;
+    transition: scale 0.3s ease, background-color 0.3s ease;
+}
+.task:hover{
+    background-color: #f1f1f1;
+    scale: 1.02;
+    cursor: pointer;
+}
+#taskInput{
+    width: 98%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+    outline: none;
+    position: fixed;
+    bottom: 80px;
+}
+.icon-logo{
+    font-size: 2.5rem;
+    color: white;
+}
+.fa-trash{
+    color: #ff4d4d;
+    transition: color 0.3s ease;
+}
+.fa-trash:hover{
+    color: #ff0000;
+    cursor: pointer;
+}
+ul > li > div{
+    display: flex;
+    gap: 10px;
+}
+.task.done{
+    text-decoration: line-through;
+    color: #999;
+    border: 1px solid greenyellow;
+}
+.task.done > div > i.fa-pen-to-square{
+    display: none;
+}
+.controls{
+    padding: 5px;
+}
